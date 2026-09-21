@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="36" viewBox="0 0 176 36">
+  <rect x="0" y="2" width="32" height="32" rx="3" fill="#b8925a"/>
+  <path d="M16 8v18M9 26h14M8 13h16M11 13l-4 8a4 4 0 0 0 8 0zM21 13l-4 8a4 4 0 0 0 8 0z" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="26" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="1">VERDICT</text>
+</svg>
