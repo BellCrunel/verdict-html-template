@@ -2,7 +2,7 @@
 
 Demo photos are used for preview only and are not included in the template download.
 
-- hero_pexels-photo-6077091.jpg: Photo by Katrin Bolovtsova on Pexels, https://www.pexels.com/photo/6077091/ (Pexels License)
+- banner_pexels-photo-6077091.jpg: Photo by Katrin Bolovtsova on Pexels, https://www.pexels.com/photo/6077091/ (Pexels License)
 - page-title_pexels-photo-5669602.jpg: Photo by Sora Shimazaki on Pexels, https://www.pexels.com/photo/5669602/ (Pexels License)
 - testimonials-bg_pexels-photo-6077123.jpg: Photo by Katrin Bolovtsova on Pexels, https://www.pexels.com/photo/6077123/ (Pexels License)
 - about_pexels-photo-7876314.jpg: Photo by Kaboompics.com on Pexels, https://www.pexels.com/photo/7876314/ (Pexels License)

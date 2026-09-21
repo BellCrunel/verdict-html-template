@@ -30,7 +30,7 @@
     });
   }
 
-  // Close mobile menu after click
+  // Close mobile menu
   var navLinks = document.querySelectorAll("#mainNav .nav-link:not(.dropdown-toggle), #mainNav .dropdown-item");
   var navCollapse = document.getElementById("mainNav");
   navLinks.forEach(function (link) {
@@ -48,7 +48,6 @@
     offset: 80
   });
 
-  // Testimonials slider
   if (document.querySelector(".testimonials-slider")) {
     new Swiper(".testimonials-slider", {
       slidesPerView: 1,
@@ -69,7 +68,6 @@
     });
   }
 
-  // Counters
   var counters = document.querySelectorAll("[data-counter]");
   var counterStarted = false;
 
@@ -104,13 +102,12 @@
     observer.observe(statsSection);
   }
 
-  // Contact form (demo)
+  // Contact form test
   var forms = document.querySelectorAll(".contact-form");
   forms.forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var msg = form.querySelector(".form-message");
-      // replace this with your own form handler (Formspree, PHP mailer etc.)
       if (msg) {
         msg.style.display = "block";
         msg.textContent = "Thank you. Your message has been sent, we will get back to you shortly.";
@@ -120,7 +117,7 @@
     });
   });
 
-  // Dropdown on hover (desktop only)
+  // Dropdown on hover desktop
   var dropdowns = document.querySelectorAll(".navbar .dropdown");
   dropdowns.forEach(function (dd) {
     dd.addEventListener("mouseenter", function () {
@@ -133,7 +130,6 @@
         dd.querySelector(".dropdown-menu").classList.remove("show");
       }
     });
-    // on desktop the parent link should open its page
     dd.querySelector(".dropdown-toggle").addEventListener("click", function () {
       if (window.innerWidth > 991) {
         window.location.href = this.getAttribute("href");
