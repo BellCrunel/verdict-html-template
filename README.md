@@ -19,7 +19,7 @@ index.html, about.html, practice-areas.html, practice-single.html, attorneys.htm
 
 ## Live demo
 
-This repository hosts the live demo. The template package (with documentation) is available on Codester: https://www.codester.com/relict
+This repository hosts the live demo. The template package (with documentation) is available on Codester: https://www.codester.com/RelictTheme/
 
 ## Images
 
