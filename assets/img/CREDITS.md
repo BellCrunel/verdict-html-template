@@ -16,7 +16,7 @@ Demo photos are used for preview only and are not included in the template downl
 - team-6_pexels-photo-8171190.jpg: Photo by Kampus Production on Pexels, https://www.pexels.com/photo/8171190/ (Pexels License)
 - blog/post-1_pexels-photo-8731036.jpg: Photo by Mikhail Nilov on Pexels, https://www.pexels.com/photo/8731036/ (Pexels License)
 - blog/post-2_pexels-photo-4427501.jpg: Photo by August de Richelieu on Pexels, https://www.pexels.com/photo/4427501/ (Pexels License)
-- blog/post-3_pexels-photo-6077665.jpg: Photo by Katrin Bolovtsova on Pexels, https://www.pexels.com/photo/6077665/ (Pexels License)
+- blog/post-3_pexels-photo-8441783.jpg: Photo by Kampus Production on Pexels, https://www.pexels.com/photo/8441783/ (Pexels License)
 - blog/post-4_pexels-photo-8112126.jpg: Photo by Pavel Danilyuk on Pexels, https://www.pexels.com/photo/8112126/ (Pexels License)
 - blog/post-5_pexels-photo-9367109.jpg: Photo by Erik Mclean on Pexels, https://www.pexels.com/photo/9367109/ (Pexels License)
 - blog/post-6_pexels-photo-7841812.jpg: Photo by RDNE Stock project on Pexels, https://www.pexels.com/photo/7841812/ (Pexels License)

@@ -1,8 +1,6 @@
 (function () {
   "use strict";
 
-  document.documentElement.classList.remove("no-js");
-
   // Sticky header
   var header = document.getElementById("header");
   var backToTop = document.getElementById("backToTop");
@@ -49,6 +47,7 @@
     once: true,
     offset: 80
   });
+  document.documentElement.classList.remove("no-js");
 
   if (document.querySelector(".testimonials-slider")) {
     new Swiper(".testimonials-slider", {
