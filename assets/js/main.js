@@ -1,6 +1,8 @@
 (function () {
   "use strict";
 
+  document.documentElement.classList.remove("no-js");
+
   // Sticky header
   var header = document.getElementById("header");
   var backToTop = document.getElementById("backToTop");
@@ -55,7 +57,8 @@
       loop: true,
       autoplay: {
         delay: 5000,
-        disableOnInteraction: false
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
       },
       pagination: {
         el: ".testimonials-slider .swiper-pagination",

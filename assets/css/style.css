@@ -17,7 +17,8 @@
   --primary: #1c2b3a;
   --primary-dark: #14202c;
   --accent: #b8925a;
-  --accent-dark: #a07d48;
+  --accent-strong: #8a6a35;
+  --accent-dark: #74582c;
   --light: #f6f4ef;
   --dark: #111a24;
   --text: #4a5563;
@@ -28,6 +29,12 @@
 }
 
 /* ====== Base ====== */
+/* AOS fallback */
+.no-js [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--text);
@@ -51,7 +58,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 img {
@@ -71,17 +78,8 @@ section {
   margin-bottom: 50px;
 }
 
-.section-title .subtitle {
-  display: inline-block;
-  color: var(--accent);
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
 .section-title h2 {
+  text-wrap: balance;
   font-size: 40px;
   margin-bottom: 15px;
 }
@@ -92,7 +90,7 @@ section {
 }
 
 .text-accent {
-  color: var(--accent) !important;
+  color: var(--accent-strong) !important;
 }
 
 /* ====== Buttons ====== */
@@ -100,12 +98,12 @@ section {
   font-weight: 600;
   padding: 12px 28px;
   border-radius: 3px;
-  transition: all .3s;
+  transition: background-color .3s, border-color .3s, color .3s;
 }
 
 .btn-primary {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
   color: #fff;
 }
 
@@ -197,7 +195,7 @@ section {
 }
 
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .dropdown-menu {
@@ -215,7 +213,7 @@ section {
 
 .dropdown-item:hover {
   background: var(--light);
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .header-cta {
@@ -231,7 +229,7 @@ section {
 }
 
 .header-phone i {
-  color: var(--accent);
+  color: var(--accent-strong);
   margin-right: 4px;
 }
 
@@ -242,6 +240,10 @@ section {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 3px rgba(184, 146, 90, .4);
 }
 
 @media (max-width: 991px) {
@@ -284,15 +286,8 @@ section {
   z-index: 1;
 }
 
-.banner .subtitle {
-  color: var(--accent);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
-}
-
 .banner h1 {
+  text-wrap: balance;
   color: #fff;
   font-size: 56px;
   margin: 16px 0 20px;
@@ -343,6 +338,7 @@ section {
 }
 
 .page-title h1 {
+  text-wrap: balance;
   color: #fff;
   font-size: 44px;
   margin-bottom: 10px;
@@ -377,6 +373,7 @@ section {
 }
 
 .stat-number {
+  font-variant-numeric: tabular-nums;
   font-family: var(--font-heading);
   font-size: 44px;
   font-weight: 600;
@@ -399,24 +396,6 @@ section {
   border-radius: 4px;
 }
 
-.about-img .experience-box {
-  position: absolute;
-  right: -20px;
-  bottom: -20px;
-  background: var(--accent);
-  color: #fff;
-  padding: 24px 28px;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.about-img .experience-box strong {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 40px;
-  line-height: 1;
-}
-
 .about-list {
   list-style: none;
   padding: 0;
@@ -433,14 +412,7 @@ section {
   font-family: "bootstrap-icons";
   position: absolute;
   left: 0;
-  color: var(--accent);
-}
-
-@media (max-width: 991px) {
-  .about-img .experience-box {
-    right: 10px;
-    bottom: 10px;
-  }
+  color: var(--accent-strong);
 }
 
 /* ====== Practice Areas ====== */
@@ -450,7 +422,7 @@ section {
   padding: 36px 30px;
   border-radius: 4px;
   height: 100%;
-  transition: all .3s;
+  transition: border-color .3s, box-shadow .3s, transform .3s;
 }
 
 .practice-card:hover {
@@ -467,7 +439,7 @@ section {
   justify-content: center;
   background: var(--light);
   border-radius: 50%;
-  color: var(--accent);
+  color: var(--accent-strong);
   font-size: 26px;
   margin-bottom: 20px;
 }
@@ -482,13 +454,13 @@ section {
 }
 
 .practice-card h3 a:hover {
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .practice-card .read-more {
   font-weight: 600;
   font-size: 14px;
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .practice-card .read-more i {
@@ -510,12 +482,12 @@ section {
   flex: 0 0 52px;
   width: 52px;
   height: 52px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--accent-strong);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent);
+  color: var(--accent-strong);
   font-size: 22px;
 }
 
@@ -584,7 +556,7 @@ section {
 }
 
 .team-card span {
-  color: var(--accent);
+  color: var(--accent-strong);
   font-size: 14px;
   font-weight: 500;
 }
@@ -620,11 +592,6 @@ section {
   height: 100%;
 }
 
-.testimonial-item .stars {
-  color: var(--accent);
-  margin-bottom: 14px;
-}
-
 .testimonial-item p {
   font-size: 16px;
   color: rgba(255, 255, 255, .85);
@@ -641,7 +608,7 @@ section {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--accent-strong);
   color: #fff;
   display: flex;
   align-items: center;
@@ -675,7 +642,7 @@ section {
 
 /* ====== CTA Section ====== */
 .cta {
-  background: var(--accent);
+  background: var(--accent-strong);
   padding: 60px 0;
   color: #fff;
 }
@@ -729,12 +696,12 @@ section {
 
 .blog-card .blog-meta {
   font-size: 13px;
-  color: #8a94a2;
+  color: #6b7280;
   margin-bottom: 10px;
 }
 
 .blog-card .blog-meta i {
-  color: var(--accent);
+  color: var(--accent-strong);
   margin-right: 4px;
 }
 
@@ -742,17 +709,17 @@ section {
   margin-left: 14px;
 }
 
-.blog-card h3 {
+.blog-card h2, .blog-card h3 {
   font-size: 21px;
   margin-bottom: 10px;
 }
 
-.blog-card h3 a {
+.blog-card h2 a, .blog-card h3 a {
   color: var(--heading);
 }
 
-.blog-card h3 a:hover {
-  color: var(--accent);
+.blog-card h2 a:hover, .blog-card h3 a:hover {
+  color: var(--accent-strong);
 }
 
 .blog-card p {
@@ -763,7 +730,7 @@ section {
 .blog-card .read-more {
   font-weight: 600;
   font-size: 14px;
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 /* Blog single */
@@ -797,8 +764,8 @@ section {
 }
 
 .blog-tags a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--accent-strong);
+  color: var(--accent-strong);
 }
 
 /* Sidebar */
@@ -837,11 +804,11 @@ section {
 }
 
 .sidebar .widget ul li a:hover {
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .sidebar .widget ul li a i {
-  color: var(--accent);
+  color: var(--accent-strong);
   font-size: 12px;
   margin-right: 6px;
 }
@@ -873,18 +840,18 @@ section {
   flex: 0 0 70px;
 }
 
-.sidebar .recent-post h6 {
+.sidebar .recent-post h4 {
   font-family: var(--font-body);
   font-size: 15px;
   margin-bottom: 2px;
 }
 
-.sidebar .recent-post h6 a {
+.sidebar .recent-post h4 a {
   color: var(--heading);
 }
 
 .sidebar .recent-post small {
-  color: #8a94a2;
+  color: #6b7280;
 }
 
 .sidebar .widget-cta {
@@ -914,12 +881,13 @@ section {
 }
 
 .pagination .page-item.active .page-link {
-  background: var(--accent);
-  border-color: var(--accent);
+  color: #fff;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
 }
 
 .pagination .page-link:hover {
-  color: var(--accent);
+  color: var(--accent-strong);
   background: var(--light);
 }
 
@@ -929,7 +897,7 @@ section {
 }
 
 .attorney-profile .position {
-  color: var(--accent);
+  color: var(--accent-strong);
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -964,8 +932,8 @@ section {
 }
 
 .attorney-social a:hover {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
   color: #fff;
 }
 
@@ -995,7 +963,7 @@ section {
   font-family: "bootstrap-icons";
   position: absolute;
   left: 0;
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .practice-nav {
@@ -1015,9 +983,9 @@ section {
   font-weight: 500;
 }
 
-.practice-nav li a:hover, .practice-nav li a.active {
-  background: var(--accent);
-  border-color: var(--accent);
+.sidebar .widget .practice-nav li a:hover, .sidebar .widget .practice-nav li a.active {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
   color: #fff;
 }
 
@@ -1037,8 +1005,12 @@ section {
 
 .accordion-button:not(.collapsed) {
   background: var(--light);
-  color: var(--accent);
+  color: var(--accent-strong);
   box-shadow: none;
+}
+
+.accordion-button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(184, 146, 90, .3);
 }
 
 .accordion-button:focus {
@@ -1062,12 +1034,12 @@ section {
 
 .contact-info-box i {
   font-size: 30px;
-  color: var(--accent);
+  color: var(--accent-strong);
   margin-bottom: 12px;
   display: block;
 }
 
-.contact-info-box h4 {
+.contact-info-box h2 {
   font-size: 19px;
   margin-bottom: 6px;
 }
@@ -1145,7 +1117,7 @@ section {
 }
 
 .footer-social a:hover {
-  background: var(--accent);
+  background: var(--accent-strong);
   border-color: var(--accent);
   color: #fff;
 }
@@ -1170,7 +1142,7 @@ section {
   bottom: 24px;
   width: 44px;
   height: 44px;
-  background: var(--accent);
+  background: var(--accent-strong);
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -1178,7 +1150,7 @@ section {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
+  transition: opacity .3s, visibility .3s, background-color .3s;
   z-index: 99;
 }
 
