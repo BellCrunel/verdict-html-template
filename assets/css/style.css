@@ -540,8 +540,15 @@ section {
   transition: bottom .3s;
 }
 
-.team-card:hover .team-social {
+.team-card:hover .team-social,
+.team-card:focus-within .team-social {
   bottom: 0;
+}
+
+@media (hover: none) {
+  .team-card .team-social {
+    bottom: 0;
+  }
 }
 
 .team-card .team-social a {

@@ -12,7 +12,7 @@ Demo photos are used for preview only and are not included in the template downl
 - team-2_pexels-photo-39204882.jpg: Photo by Vitaly Gariev on Pexels, https://www.pexels.com/photo/39204882/ (Pexels License)
 - team-3_pexels-photo-10657877.jpg: Photo by Ahmed Elwakel on Pexels, https://www.pexels.com/photo/10657877/ (Pexels License)
 - team-4_pexels-photo-10041272.jpg: Photo by Los Muertos Crew on Pexels, https://www.pexels.com/photo/10041272/ (Pexels License)
-- team-5_pexels-photo-34793736.jpg: Photo by Moh Dikko Photography on Pexels, https://www.pexels.com/photo/34793736/ (Pexels License)
+- team-5_pexels-photo-7654586.jpg: Photo by Pavel Danilyuk on Pexels, https://www.pexels.com/photo/7654586/ (Pexels License)
 - team-6_pexels-photo-8171190.jpg: Photo by Kampus Production on Pexels, https://www.pexels.com/photo/8171190/ (Pexels License)
 - blog/post-1_pexels-photo-8731036.jpg: Photo by Mikhail Nilov on Pexels, https://www.pexels.com/photo/8731036/ (Pexels License)
 - blog/post-2_pexels-photo-4427501.jpg: Photo by August de Richelieu on Pexels, https://www.pexels.com/photo/4427501/ (Pexels License)
