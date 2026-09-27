@@ -1039,13 +1039,13 @@ section {
   box-shadow: none;
 }
 
-.accordion-button:focus-visible {
-  box-shadow: 0 0 0 3px rgba(184, 146, 90, .3);
-}
-
 .accordion-button:focus {
   box-shadow: none;
   border-color: var(--border);
+}
+
+.accordion-button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(184, 146, 90, .3);
 }
 
 .accordion-body {

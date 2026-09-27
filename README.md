@@ -1,6 +1,6 @@
 # Verdict - Law Firm HTML Template
 
-Verdict is a responsive HTML template for law firms, attorneys and legal consultants. Built with Bootstrap 5, it comes with 10 ready pages, a testimonials slider, animated counters and a contact form layout.
+Verdict is a responsive HTML template for law firms and attorneys, built with Bootstrap 5. It has 10 pages. The home page includes a testimonials slider and animated counters.
 
 ## Features
 
