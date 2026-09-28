@@ -19,7 +19,7 @@ index.html, about.html, practice-areas.html, practice-single.html, attorneys.htm
 
 ## Live demo
 
-This repository hosts the live demo. The template package (with documentation) is available on Codester: https://www.codester.com/RelictTheme/
+This repository hosts the live demo. The template package (with documentation) is available on Codester: https://www.codester.com/items/71493/verdict-law-firm-html-template
 
 ## Images
 
